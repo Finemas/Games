@@ -1,0 +1,14 @@
+[Project]
+FileName=D:\ujc\programy\cviceni\kap09\cv13.dev
+Name=cv13
+Use_gpp=0
+UnitCount=2
+ResFiles=D:\ujc\programy\cviceni\kap09\rsrc.rc
+NoConsole=0
+IsDll=0
+Icon=C:\DEV-C_~1\Bin\Mainicon.ico
+[Unit1]
+FileName=D:\ujc\programy\cviceni\kap09\cv13-fce.c
+[Unit2]
+FileName=D:\ujc\programy\cviceni\kap09\cv13-hlavni.c
+FileTime=807815817

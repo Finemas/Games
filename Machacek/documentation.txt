@@ -1,0 +1,31 @@
+    Hra Macháček
+    Macháček je společenská stolní hra s hracími šestihrannými kostkami pro dva a více hráčů. Kořeny hry sahají do Jižní Ameriky, do Evropy byla přinesena španělským dobyvatelem Francisco Pizarrem během 16. století. K úspěšnému hraní hry je potřebné oklamat soupeře a poznat soupeřův klam. Podobné hry pod názvem Dudo, Cachito nebo Perudo jsou známy v Jižní Americe, ve Spojených státech je někdy shodná hra nazývána Mexicali nebo Mexičan. V Německu je hra známá pod názvem Mäxchen (malý Max).
+Zdroj: ( Wikipedie.cz, 2019 ).
+
+    Návod
+    Hra začíná hláškou „Jdeme hrát Macháčka!", kdy začne první kolo, skóre je 0:0 (první číslo vaše). Počítač háže kostkami a řiká, jakou hodnotu hodil. Na Vás je teď zda budete hodnotě věřit, pak jste na řadě vy. Pokud nevěříte, počítač ukáže hodnotu hodu. Shoduje-li se s tím co počítač řekl, získává bod. Neshoduje-li se, tak získáváte bod vy a začíná nové kolo.
+Jinak hážete kostkami a musíte hodit větší číslo než počítač předtím. Na monitoru se Vám ukáže hodnota vašeho hodu. Na Vás je teď hodnotu oznámit počítači. Ten se poté rozhodne, zda Vám bude věřit či nikoliv. Nevěřím vám, tak se ověří, zda jste lhal, pak získává bod počítač nebo zda jste řekl pravdu, pak získává bod Vy a začíná nové kolo.
+Hra se opakuje dokud nestisknete „ctrl + d“, čímž hru ukončíte. Na displej se Vám ukáže výsledek.
+
+
+    Technický postup
+    Jako první se spustí funkce „scanValue” s parametrem pole struktury „VALUE“ kam se uloží hodnoty dle pravidel hry viz. tabulka. Index zde reprezentuje uroveň hodnoty, čím vyšší tím lepší. Od 14. indexu jsou hodnoty uloženy jako stringy pro potřeby hry.
+Poté se spouští funkce „scanPhrase”, která ze souboru "data.txt", načte hlášky a uloží je do 2D pole charů viz. tabulka.
+    Ihned potom se spouští funkce „delNewline“, která odstraňuje znak nové řádku (/n).
+Pak už začíná samotná hra. Do proměnné „value“ se uloží náhodné číslo 0-20 určující index v poli struktury „VALUE “a tedy i hodnotu ve hře. Podobně s proměnou „phrase“, kam se uloží náhodné číslo podle počtu načtení hlášek ze souboru.
+Do proměnné „fake“ se zapíše, buď hodnota 0 - false nebo 1 - true, podle které se bude odvíjet tah počítače.
+    Podle proměnné „phrase“ se vypíše určitá hláška na daném indexu, podle proměnné „value“ hodnota hodu kostek a podle proměnné „fake“, se určí zda bude počítač lhát hodnota 0, či řekne pravdu hodnota 1.
+Na hráči je teď zda bude hodnotě počítači věřit, pokud ano je na řadě. Do proměnné value se uloží náhodná hodnota a podle indexu v poli „VALUE“, se hráči ukáže jeho hod kostkou. Hráč teď napíše otázku počítači, kterou mu řekne jakou má hodnotu.
+*** Otázka se porovnává s hláškama v souboru „data.txt“ a pokud je unikátní spustí funkce „updatePhrases“ a zapíše se do daného souboru.
+    Do proměnné „answer“ se uloží hodnota 0/1, podle které se počítač rozhodne zda bude hráči věřit či nikoliv.
+Pokud však hráč počítači hodnotu nevěřil, je opravdová hodnota ukázána a pokud se hodnota lišila je připočten bod hráči a naopak.
+    Pak začne nové kolo a postup se opakuje dokud nenastane End-Of-File (ctrl + d), tím se pustí funkce „freeAll“, která uvolní pamět, a vypíše se výsledek.
+
+
+
+
+
+
+
+
+

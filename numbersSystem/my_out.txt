@@ -1,0 +1,2 @@
+Zadejte z a do jake ciselne soustavy chcete prevadet: Zadejte cislo, ktere chcete prevest: Nespravny vstup.
+Cislo -305542328 v 10 soustave je -30-5-5-4-2-3-2-8

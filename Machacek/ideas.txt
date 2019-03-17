@@ -1,0 +1,5 @@
+* moznost pridat vice hracu
+* davat jinou vahu na ruzne hlasky
+* pocitace bude lhat spise u vyssich hodnot
+* pocitace nebude spise lhat pri vyssich hodnotach
+* pridani historie

@@ -1,0 +1,17 @@
+[Project]
+FileName=D:\ujc\programy\cviceni\kap11\cv03.dev
+Name=cv03
+Use_gpp=0
+UnitCount=3
+ResFiles=D:\ujc\programy\cviceni\kap11\rsrc.rc
+NoConsole=0
+IsDll=0
+Icon=C:\DEV-C_~1\Bin\Mainicon.ico
+[Unit1]
+FileName=D:\ujc\programy\cviceni\kap11\cv03-hlavni.c
+FileTime=807818350
+[Unit2]
+FileName=D:\ujc\programy\cviceni\kap11\cv03-pozdravy.c
+FileTime=807818124
+[Unit3]
+FileName=D:\ujc\programy\cviceni\kap11\cv03-pozdravy.h

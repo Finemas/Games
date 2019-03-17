@@ -1,0 +1,1 @@
+Zadejte z a do jake ciselne soustavy chcete prevadet: Zadejte cislo, ktere chcete prevest: Cislo 10 v 2 soustave je 1010
